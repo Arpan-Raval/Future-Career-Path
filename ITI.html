@@ -1,0 +1,145 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ITI Career Path Finder</title>
+
+    <script> 
+        function redirectToSelected() {
+            var dropdown = document.getElementById("interest");
+            var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+            window.location.href = selectedOption;
+        }
+    </script>
+
+    <style>
+.container1 h1{
+    text-shadow: 0 0 20px rgb(148, 97, 210);
+    text-align: center;
+}
+.container2 h1{
+    text-shadow: 0 0 20px rgb(148, 97, 210);
+    text-align: center;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    background-color: rgb(148, 97, 210);
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    height: 50%;
+    padding:5px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow:0 0 5px black,0 0 5px black;
+    color: black;
+}
+.container2{
+    font-family: Arial, Helvetica, sans-serif;
+    width:50%;
+    height: 40%;
+    padding:5px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow:0 0 5px black,0 0 5px black;
+    color: black;
+}
+.container3 {
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow:0 0 20px black,0 0 40px black;
+    color: black;
+    text-shadow: 0 0 20px rgb(148, 97, 210);
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(244, 242, 242, 0.2);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+}
+input, select {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #6af571;
+}
+#output {
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>   
+    <header>
+        <h1><u><b>ITI CAREER FIELD</b></u></h1>
+    </header>
+    <main>
+    <div class="container1">
+        <u><h1>ADVANTAGE</h1></u>
+        <ul>
+            <li><b>Practical Training:</b> ITI programs offer hands-on training in various technical trades, providing practical skills that are directly applicable to the workforce.</li>
+            <li><b>Short Duration:</b> ITI courses are generally shorter in duration compared to traditional academic programs like a bachelor's degree, allowing individuals to enter the workforce more quickly.</li>
+            <li><b>Cost-Effectiveness:</b> ITI courses are often more affordable than traditional college degrees, making them accessible to a wider range of individuals.</li>
+            <li><b>Industry-Relevant Skills:</b> ITI programs are designed to meet the needs of industries, ensuring that graduates possess skills that are in demand in the job market.</li>
+            <li><b>Employment Opportunities:</b> Completion of an ITI program opens up opportunities for employment in various industries such as manufacturing, construction, automotive, electronics, and more.</li>
+            <li><b>Career Progression:</b> Many ITI graduates have opportunities for career advancement through further education and on-the-job experience.</li>
+            <li><b>Entrepreneurial Opportunities:</b> ITI graduates have the option to start their own businesses or work as freelancers in their respective trades, providing them with flexibility and independence.</li>
+        </ul>
+    </div>
+  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp  &nbsp 
+    <div class ="container2">
+        <u><h1>IMPORTANCE</h1></u>
+        <ul>
+            <li><b>Skill Development:</b> ITI programs focus on practical skills that are highly relevant to specific industries. This emphasis on hands-on training ensures that graduates are equipped with the technical expertise needed to excel in their chosen field.</li>
+            <li><b>Addressing Skills Gap:</b> Many industries face a shortage of skilled workers due to a gap between the skills demanded by employers and those possessed by job seekers. ITI programs play a crucial role in bridging this gap by providing individuals with the necessary skills to enter the workforce.</li>
+            <li><b>Promoting Economic Growth:</b> A skilled workforce is essential for driving economic growth and innovation. By equipping individuals with the skills needed to succeed in high-demand industries, ITI programs contribute to economic development by increasing productivity and competitiveness.</li>
+            <li><b>Enhancing Employability:</b> ITI graduates often enjoy higher employability rates compared to individuals with only academic qualifications. Their practical training and industry-specific skills make them attractive candidates for employers seeking capable and competent workers.</li>
+            <li><b>Empowering Individuals:</b> ITI programs offer opportunities for individuals from diverse backgrounds to acquire valuable skills and secure stable employment. This empowerment not only improves the livelihoods of individuals and their families but also fosters social and economic inclusion.</li>
+            <li><b>Supporting Sustainable Development:</b> By providing training in fields such as renewable energy, green technology, and sustainable construction, ITI programs contribute to environmentally sustainable practices and support efforts to address climate change and environmental degradation.</li>
+        </ul>
+    </div>
+    </main>
+    <div class="container3">
+        <u><h1>ITI CAREER</h1></u>
+        <form id="itiForm">
+
+            <label for="interest">Interest:</label>
+            <select id="interest" required>
+                <option>Electrical and Electronics:</option>
+                <option>Mechanical and Automotive</option>
+                <option>Construction and Civil Engineering</option>
+                <option value="work2.html">Information Technology and Computer Science</option>
+                <option value="work1.html">Refrigeration and Air Conditioning</option>
+                <option>Other</option>
+            </select>
+            <button type="button" onclick="redirectToSelected()">Search</button>
+        </form>
+</body>
+</html>
