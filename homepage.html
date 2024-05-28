@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Future career path</title>
+
+        <script>
+         function RedirectToSelected(){
+             var dropdown = document.getElementById("careersearch");
+             var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+             window.location.href = selectedOption;
+         }
+        </script>
+        <style>
+            header{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(157, 157, 235);
+                text-align: center;
+                padding: 20px;
+                font-size: large;
+            }
+            h2{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                text-shadow: 0 0 20px white;
+                font-size: 30px;
+            }
+            .que{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                text-shadow: 0 0 20px rgb(157, 157, 235),0 0 40px rgb(157, 157, 235);
+                text-align: center;
+             
+            }
+            .maindiv{
+                left: 50%;
+                top: 65%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                width: 40%;
+                padding: 20px;
+                background: rgb(151, 151, 239);
+                box-shadow:0 0 10px black,0 0 20px black;
+            }
+            button {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px;
+                border: black;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input, select {
+               margin-bottom: 16px;
+               padding: 6px;
+               border: 1px solid rgb(152, 102, 246);
+               border-radius: 4px;
+            }
+            form {
+               display: flex;
+               flex-direction: column;
+               text-shadow: 0 0 20px rgb(255, 255, 255);
+            }
+            label {
+               margin-bottom: 8px;
+               font-size: 20px;
+            }
+            .word{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                text-align: center;
+            
+
+            }
+            footer{
+                text-align: center;
+                padding: 10px;
+                background-color: rgb(157, 157, 235);
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+       <header>
+        <h1><B><U>FUTURE CAREER PATH</U></B></h1>
+       </header>
+       
+       <h2 class="que"><u>What career that you want to Achieve in your future?</u></h2>
+       <div class="word">
+       <h3>This is the right place to find your future career.</h3>
+       <h3>This website also give the final time to Achieve that goal</h3>
+       </div>
+       <div class="maindiv">
+           <h2><u>select your career interest</u></h2>
+           <form id="career">
+            <label for="careersearch">Career</label>
+            <select id="careersearch">
+                <option value="ITI.html">iti career field</option>
+                <option>other</option>
+            </select>
+            <button type="button" onclick="RedirectToSelected()">Search</button>
+        </form>
+       </div>
+       <footer>
+        <p><u><i><b> Thank You </b></i></u></p>
+        <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
+      </footer>  
+    </body>
+</html>
