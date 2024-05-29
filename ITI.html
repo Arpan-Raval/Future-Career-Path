@@ -29,6 +29,19 @@ header{
     padding: 5px;
     background-color: rgb(148, 97, 210);
 }
+header h1{
+animation: slideInFromUP 1s ease;
+}
+@keyframes slideInFromUP {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 main {
     display: flex;
     justify-content: center;
@@ -42,6 +55,17 @@ main {
     border-radius: 8px;
     box-shadow:0 0 5px black,0 0 5px black;
     color: black;
+    animation: slideInFromLeft 1.5s ease;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .container2{
     font-family: Arial, Helvetica, sans-serif;
@@ -52,6 +76,17 @@ main {
     border-radius: 8px;
     box-shadow:0 0 5px black,0 0 5px black;
     color: black;
+    animation: slideInFromRight 1.5s ease;
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .container3 {
     left: 50%;
