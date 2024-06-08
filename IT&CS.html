@@ -2,13 +2,17 @@
     <head>
         <title>Information Technology and Computer Science</title>
         <style>
+body{
+    background-color: rgb(172, 203, 227);
+}
 header{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
     padding: 5px;
-    background-color: rgb(76, 165, 233);
-    text-shadow:0 0 20px white;
+    color: white;
+    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
+    background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
 }
 header h1{
     animation:slideUP 1.5s ease;
@@ -33,6 +37,7 @@ header h1{
     position : relative;
     margin-top: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
     }
     .aboutit:hover{
         box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
@@ -65,6 +70,7 @@ header h1{
         margin-top: 10px;
         animation: slideInFromRight 1.5s ease-in-out;
         transition:all 0.3s ease;
+        background-color: white;
     }
     .aboutcs:hover{
         box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
@@ -93,7 +99,7 @@ header h1{
       
         padding:5px;
         border: 2px solid #000;
-
+        background-color: white;
         box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
         color: black;
         position : relative;
@@ -112,17 +118,29 @@ header h1{
 
         padding:5px;
         border: 2px solid #000;
-        animation:slideInFromLeft 2s ease-in-out;
+        animation:slideInFromDown 2s ease-in-out;
         animation-delay: 2s;
         box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
         color: black;
         position : relative;
         margin-top: 10px;
+        
+}
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .main h2{
     text-align: center;
     font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
+    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
+    color: white;
 }
 #co,#ist,#na,#sd,#wd,#sa,#da,#ca,#tse,#ht,#mad,#ic,#emt,#fe{
     border: solid;
@@ -132,6 +150,7 @@ header h1{
     margin-bottom: 20px;
     box-shadow:0 0 10px black;
     transition:box-shadow 0.3s ease;
+    background-color: white;
 }
 #co:hover,#ist:hover,#na:hover,#sd:hover,#wd:hover,#sa:hover,#da:hover,#ca:hover,#tse:hover,#ht:hover,#mad:hover,#ic:hover,#emt:hover,#fe:hover{
     box-shadow:0 0 80px rgb(76, 165, 233),0 0 80px black;
@@ -154,6 +173,7 @@ header h1{
     position : relative;
     margin-top: 10px;
     transition:box-shadow 0.3s ease;
+    background-color: white;
 }
 .gov:hover{
     box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
@@ -175,6 +195,7 @@ header h1{
     max-width: 80%;
     border-radius: 10px;
     transition: all 0.3s ease;
+    background-color: white;
 }
 .time:hover{
     box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
@@ -190,16 +211,18 @@ header h1{
 footer{
     text-align: center;
     padding: 5px;
-    background-color: rgb(76, 165, 233);
+    background: linear-gradient(0deg,black,gray);
     position: relative;
     bottom: 0;
     width: 100%;
     font-size: 20px;
+    color: white;
+    text-shadow:0 0 20px black;
 }
         </style>
     </head>
     <body>
-        <header><h1><u><b>Information Technology and Computer Science</b></u></h1></header>
+        <header><h1><u><b>INFORMATION TECHNOLOGY AND COMPUTER SCIENCE</b></u></h1></header>
         <main>
         <div class="aboutit">
             <h2><b><u>Information Technology in ITIs</u></b></h2>
