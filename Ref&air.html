@@ -88,7 +88,47 @@ header h1{
     text-align: center;
     font-size: 30px;
 }
+.career{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:5px;
+    border: 2px solid #000;
+    animation:slideInFromDown 2s ease-in-out;
+    animation-delay: 2s;
+    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
+    color: black;
+    position : relative;
+    margin-top: 10px;    
+}
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
+#ra,#hvac,#se,#is,#mt,#tsr,#ebo,#psm,#i,#qci{
+    border: solid;
+    background:image 30px ;
+    display: flex;
+    border-radius: 1%;
+    margin-bottom: 20px;
+    box-shadow:0 0 10px black;
+    transition:box-shadow 0.3s ease;
+    background-color: white;
+    max-height: 230px;
+}
+.ra,.hvac,.se,.is,.mt,.tsr,.ebo,.psm,.i,.qci{
+    margin-left: 20px;
+    max-width: auto;
+}
+.ra li,.hvac li,.se li,.is li,.mt li,.tsr li,.ebo li,.psm li,.i li,.qci li{
+    margin-bottom: 20px;
+    font-size: large;
+}
 .time{
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 10px;
@@ -166,6 +206,7 @@ footer{
                     <li><b>Role:</b>Install, maintain, and repair residential, commercial, and industrial refrigeration and air conditioning systems.</li>
                     <li><b>Responsibilities:</b>Diagnose issues, replace faulty components, ensure systems are operating efficiently, and perform routine maintenance.</li>
                 </ul>
+                    </div>
                 </div>
                 <div id="hvac">
                     <img src="https://www.com.edu/_resources/images/smarter-education/COM_Program_Pages_HVAC.jpg" width="400px" height="auto">
