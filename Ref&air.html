@@ -192,6 +192,21 @@ header h1{
     font-size: larger;
     text-shadow: 0 0 20px rgb(76, 165, 233);
 }
+table {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+th, td {
+    padding: 12px 15px;
+}
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
 footer{
     text-align: center;
     padding: 5px;
@@ -202,71 +217,6 @@ footer{
     font-size: 20px;
     color: white;
     text-shadow:0 0 20px black;
-}
-/* Basic table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-/* Table header styling */
-thead {
-    background-color: #4CAF50;
-    color: white;
-    text-align: left;
-}
-
-th, td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Zebra striping for rows */
-tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-/* Hover effect for rows */
-tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Responsive table */
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    tr {
-        margin: 0 0 1rem 0;
-    }
-
-    td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        white-space: nowrap;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        font-weight: bold;
-        white-space: nowrap;
-    }
 }
 
 </style>
