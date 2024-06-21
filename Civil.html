@@ -18,6 +18,17 @@ header{
     text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
     background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
 }
+header h1{
+    animation:slideUP 1.5s ease;
+}
+@keyframes slideUP{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
     </style>
 </head>
 <body>
