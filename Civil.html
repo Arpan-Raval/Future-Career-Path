@@ -74,6 +74,16 @@ header h1{
     transition:box-shadow 0.3s ease;
     animation:slideInFromDown 1s ease;
 }
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .benefits:hover{
     box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
 }
