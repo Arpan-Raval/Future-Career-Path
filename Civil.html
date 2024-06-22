@@ -99,12 +99,22 @@ header h1{
     font-family: Arial, Helvetica, sans-serif;
     padding:5px;
     border: 2px solid #000;
-    animation:slideInFromDown 2s ease-in-out;
     animation-delay: 2s;
     box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
     color: black;
     position : relative;
     margin-top: 10px;    
+    animation:slideInFromDown 2s ease-in-out;
+}
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .career h2{
     text-align: center;
