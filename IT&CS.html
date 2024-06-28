@@ -46,6 +46,7 @@ header h1{
         text-shadow: 0 0 20px rgb(76, 165, 233);
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -229,12 +230,29 @@ header h1{
     font-size: 25px;
     text-shadow: 0 0 20px rgb(76, 165, 233);
 }
+.college h2{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 5px rgb(76, 165, 233);
+    color: black;
+    top:10px;
+    background-color:white;
+    padding:20px;
+    border: 2px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.college h2:hover{
+    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
+}
 table {
     width: 100%;
     font-family: 'Arial', sans-serif;
     margin: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+
 th, td {
     padding: 12px 15px;
 }
@@ -261,7 +279,8 @@ footer{
         <header><h1><u><b>INFORMATION TECHNOLOGY AND COMPUTER SCIENCE</b></u></h1></header>
         <main>
         <div class="aboutit">
-            <h2><b><u>Information Technology in ITIs</u></b></h2>
+            <h2 onclick="display(this)"><b><u>Information Technology in ITIs</u></b></h2>
+            <div class="content" style="display: none;">
             <h3><b><u>Course Offered:</u></b></h3>
             <ul>
             <li><b>Information Technology (IT):</b> Focuses on basic computer operations, software applications, and general IT skills.</li>                    
@@ -288,9 +307,11 @@ footer{
                 <li>Fundamental knowledge of electronic systems and maintenance.</li>
             </ul>
         </div>
+        </div>
         &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  
         <div class="aboutcs">
-            <h2><b><u>Computer Science in ITIs</u></b></h2>
+            <h2 onclick="display(this)"><b><u>Computer Science in ITIs</u></b></h2>
+            <div class="content" style="display: none;">
             <h3><b><u>Courses Offered:</u></b></h3>
             <ul>
                 <li><b>Computer Hardware and Network Maintenance:</b> Focuses on hardware assembly, troubleshooting, and networking.</li>
@@ -317,9 +338,11 @@ footer{
                 <li>Advanced networking skills and security management.</li>
             </ul>
         </div>
+        </div>
         </main>
         <div class="benefits">
-            <h2><u><b>Benefits :</b></u></h2>
+            <h2 onclick="display(this)"><u><b>Benefits :</b></u></h2>
+            <div class="content" style="display: none;">
             <ol>
                 <li><b>Practical Skills:</b> Focus on hands-on training that equips students with practical, industry-relevant skills.</li>
                 <li><b>Industry Readiness:</b> Curriculum designed to meet the current demands of the IT and computer science industry.</li>
@@ -329,9 +352,10 @@ footer{
                 <li><b>Placement Assistance:</b> Many ITIs provide job placement assistance and have tie-ups with various companies.</li>
             </ol>
         </div>
+        </div>
         <div class="main">
-            <h2><u><b>CAREER OPPORTUNITIES & THEIR INFORMATION:</b></u></h2>
-
+            <h2 onclick="display(this)"><u><b>CAREER OPPORTUNITIES & THEIR INFORMATION:</b></u></h2>
+            <div class="content" style="display: none;">
             <div id="co">
                     <img src="https://todaycut.com/wp-content/uploads/2013/09/computer-operator-job-description.jpg" width="400px" height="auto">
                     <div class="co">
@@ -487,10 +511,11 @@ footer{
                 </ul>
                 </div>
                 </div>
+            </div>
         </div>
         <div class="gov">
-            <h2><b><u>Government Exams</u></b></h2>
-
+            <h2 onclick="display(this)"><b><u>Government Exams</u></b></h2>
+            <div class="content" style="display: none;">
                 <h3><b>1. Staff Selection Commission (SSC) Exams</b></h3>
                 <ul>
                     <li><b>SSC Combined Higher Secondary Level (CHSL) Exam:</b></li>
@@ -567,8 +592,10 @@ footer{
                     </ul>
                 </ul>
             </div>
+            </div>
             <div class="time">
-                <h2><b><u>TIME</u></b></h2>
+                <h2 onclick="display(this)"><b><u>TIME</u></b></h2>
+                <div class="content" style="display: none;">
                 <h3><b>1. Direct Employment in Private Sector</b></h3>
                      <ul>
                         <li><b>Time Frame:</b> 3-6 months after completing ITI</li>
@@ -607,10 +634,12 @@ footer{
                     <li><b>Job Market Conditions:</b> Demand for specific skills can affect how quickly you find a job.</li>
                     <li><b>Further Education:</b> Choosing to pursue additional degrees or diplomas can extend the timeline but may lead to higher-paying and more advanced positions.</li>
                 </ol>
+                </div>
             </div>
-        
+           <div class="college">
+            <h2 onclick="display(this)">Top Colleges In <b><u>Gujarat</u></b>:</h2>
+            <div class="content" style="display: none;">
             <table border="5">
-                <h2>Top Colleges In <b><u>Gujarat</u></b>:</h2>
                 <tr>
                 <th>COLLEGE NAMES</th>
                 </tr>
@@ -619,11 +648,25 @@ footer{
                 <tr><td><a href="https://itimandvisurat.gujarat.gov.in/">Government ITI Surat</a></td></tr>
                 <tr><td><a href="https://ldce.ac.in/">L.D. College of Engineering </a></td></tr>
                 <tr><td><a href="https://www.ddu.ac.in/">Dharmsinh Desai University (DDU)</a></td></tr>
-                <tr><td><a href="https://itiadmission.gujarat.gov.in/">For Any Government Collage</a></td></tr>   
+                <tr><td><a href="https://itiadmission.gujarat.gov.in/">For Any Government Collage</a></td></tr>
             </table>
+        </div> 
+            </div>
             <footer>
                 <p><u><i><b> Thank You </b></i></u></p>
                 <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
-              </footer>  
+              </footer>
+        
+              <script>
+                function display(element){
+                    let content = element.nextElementSibling;
+                    if(content.style.display==="none"){
+                        content.style.display="block";
+                    }
+                    else{
+                        content.style.display="none";
+                    }
+                }
+              </script>
     </body>
 </html>
