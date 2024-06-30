@@ -674,18 +674,31 @@ footer{
                         content.style.display="none";
                     }
                 }
+                //Benefits
+                let benefits = document.querySelector(".benefits");
+                let benefitsinfo = document.querySelector(".content3");
+                let benefitstitle= document.querySelector(".benefits h2");
+
+                benefitstitle.addEventListener("click", ()=>{
+                    if(benefitsinfo.style.display==="none"){
+                        benefitsinfo.style.display="block";
+                    }
+                    else{
+                        benefitsinfo.style.display="none";
+                    }
+                });
                 //time
                 let time = document.querySelector(".time");
-                let mahiti = document.querySelector(".content5");
-                let h2= document.querySelector(".time h2");
+                let timeinfo = document.querySelector(".content5");
+                let timetitle= document.querySelector(".time h2");
 
-                h2.addEventListener("click", ()=>{
-                    if(mahiti.style.display==="none"){
-                        mahiti.style.display="block";
+                timetitle.addEventListener("click", ()=>{
+                    if(timeinfo.style.display==="none"){
+                        timeinfo.style.display="block";
                         time.style.maxWidth= "80%";
                     }
                     else{
-                        mahiti.style.display="none";
+                        timeinfo.style.display="none";
                         time.style.maxWidth= "100%";
                     }
                 });
