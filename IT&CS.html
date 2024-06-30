@@ -122,15 +122,14 @@ header h1{
 }
 .main{
     font-family: Arial, Helvetica, sans-serif;
-
-        padding:5px;
-        border: 2px solid #000;
-        animation:slideInFromDown 2s ease-in-out;
-        animation-delay: 2s;
-        box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-        color: black;
-        position : relative;
-        margin-top: 10px;
+    padding:5px;
+    border: 2px solid #000;
+    animation:slideInFromDown 2s ease-in-out;
+    animation-delay: 2s;
+    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
+    color: black;
+    position : relative;
+    margin-top: 10px;
 }
 @keyframes slideInFromDown {
     0% {
@@ -217,7 +216,7 @@ header h1{
     color: black;
     position : relative;
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
     transition: all 0.3s ease;
     background-color: white;
@@ -602,8 +601,8 @@ footer{
             </div>
             </div>
             <div class="time">
-                <h2 onclick="display(this)"><b><u>TIME</u></b></h2>
-                <div class="content" style="display: none;">
+                <h2><b><u>TIME</u></b></h2>
+                <div class="content5" style="display: none;">
                 <h3><b>1. Direct Employment in Private Sector</b></h3>
                      <ul>
                         <li><b>Time Frame:</b> 3-6 months after completing ITI</li>
@@ -663,9 +662,9 @@ footer{
             <footer>
                 <p><u><i><b> Thank You </b></i></u></p>
                 <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
-              </footer>
-        
-              <script>
+            </footer>
+
+            <script>
                 function display(element){
                     let content = element.nextElementSibling;
                     if(content.style.display==="none"){
@@ -675,6 +674,21 @@ footer{
                         content.style.display="none";
                     }
                 }
-              </script>
+                //time
+                let time = document.querySelector(".time");
+                let mahiti = document.querySelector(".content5");
+                let h2= document.querySelector(".time h2");
+
+                h2.addEventListener("click", ()=>{
+                    if(mahiti.style.display==="none"){
+                        mahiti.style.display="block";
+                        time.style.maxWidth= "80%";
+                    }
+                    else{
+                        mahiti.style.display="none";
+                        time.style.maxWidth= "100%";
+                    }
+                });
+            </script>
     </body>
 </html>
