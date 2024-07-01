@@ -175,6 +175,22 @@ header h1{
     margin-bottom: 20px;
     font-size: large;
 }
+#co-img{
+    display:none;
+}
+#co-li{
+    display:none;
+}
+/* after */
+#co-img2{
+    display:block;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+#co-li2{
+    display:block;
+    animation:slideInFromDown 1s ease-in-out;
+}
+
 .exam{
     font-family: Arial, Helvetica, sans-serif;
     padding:5px;
@@ -364,10 +380,10 @@ footer{
             <h2><u><b>CAREER OPPORTUNITIES & THEIR INFORMATION:</b></u></h2>
             <div class="content4" style="display: none;">
             <div id="co">
-                    <img src="https://todaycut.com/wp-content/uploads/2013/09/computer-operator-job-description.jpg" width="400px" height="auto">
+                    <img id="co-img" src="https://todaycut.com/wp-content/uploads/2013/09/computer-operator-job-description.jpg" width="400px" height="auto">
                     <div class="co">
-                    <h1><b><u>Computer Operator</u></b></h1>
-                <ul>
+                    <h1 id="co-h1"><b><u>Computer Operator</u></b></h1>
+                <ul id="co-li">
                     <li><b>Responsibilities:</b> Handling basic computer operations, managing data entry tasks, maintaining office automation tools.</li>
                     <li><b>Skills Required:</b> Proficiency in operating systems, office software, and basic IT troubleshooting.</li>
                     <li><b>Exams/Certifications:</b> Typically, no additional exams are required beyond the ITI certification. However, certifications in office applications (e.g., Microsoft Office Specialist) can be beneficial.</li>
