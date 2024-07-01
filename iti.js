@@ -42,12 +42,27 @@ let career = document.querySelector(".career");
 let careerinfo = document.querySelector(".content4");
 let careertitle= document.querySelector(".career h2");
 
+
 careertitle.addEventListener("click", ()=>{
     if(careerinfo.style.display==="none"){
         careerinfo.style.display="block";
     }
     else{
         careerinfo.style.display="none";
+    }
+});
+
+let COtitle = document.querySelector("#co-h1");
+let COimg = document.querySelector("#co-img");
+let COli = document.querySelector("#co-li");
+COtitle.addEventListener("mouseover", ()=>{
+    if(COimg.id==="co-img"){
+        COimg.setAttribute("id","co-img2");
+        COli.setAttribute("id","co-li2");
+    }
+    else{
+        COimg.setAttribute("id","co-img");
+        COli.setAttribute("id","co-li");
     }
 });
 //Exam
