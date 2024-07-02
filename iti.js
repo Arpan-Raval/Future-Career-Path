@@ -32,9 +32,11 @@ let benefitstitle= document.querySelector(".benefits h2");
 benefitstitle.addEventListener("click", ()=>{
     if(benefitsinfo.style.display==="none"){
         benefitsinfo.style.display="block";
+        benefitstitle.setAttribute("id","bAfter-h2")
     }
     else{
         benefitsinfo.style.display="none";
+        benefitstitle.setAttribute("id","b-h2")
     }
 });
 //Career
