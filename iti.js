@@ -52,18 +52,21 @@ careertitle.addEventListener("click", ()=>{
     }
 });
 
-let COtitle = document.querySelector("#co-h1");
-let COimg = document.querySelector("#co-img");
-let COli = document.querySelector("#co-li");
-COtitle.addEventListener("mouseover", ()=>{
-    if(COimg.id==="co-img"){
-        COimg.setAttribute("id","co-img2");
-        COli.setAttribute("id","co-li2");
-    }
-    else{
-        COimg.setAttribute("id","co-img");
-        COli.setAttribute("id","co-li");
-    }
+let title = document.querySelectorAll("#h1");
+let image = document.querySelectorAll("#img");
+let list = document.querySelectorAll("#li");
+
+title.forEach((title,index)=>{
+    title.addEventListener("mouseover", ()=>{
+        if(image[index].id==="img"){
+            image[index].setAttribute("id","img2");
+            list[index].setAttribute("id","li2");
+        }
+        else{
+            image[index].setAttribute("id","img");
+            list[index].setAttribute("id","li");
+        }
+    });
 });
 //Exam
 let exam = document.querySelector(".exam");
