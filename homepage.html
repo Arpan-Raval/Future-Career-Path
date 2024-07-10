@@ -26,26 +26,34 @@
                 padding: 20px;
                 font-size: 23px;
                 box-shadow:0 0 0px black;
-                text-shadow: 0 0 20px rgb(67, 174, 246);
+                text-shadow:-1px -1px 0 #000,
+                            1px 1px 0 #000,
+                            -1px 1px 0 #000,
+                            1px -1px 0 #000,
+                            0 0 20px rgb(76, 165, 233), 0 0 20px black;
                 animation: complex-animation 3s;
+                color:white;
             }
             @keyframes complex-animation {
 
             0%{
                 transform: translateY(250px) scale(3);
                 opacity: 2;
+                color:black;
                 background-color:rgb(67, 174, 246);
-                
+                text-shadow: 0 0 20px rgb(67, 174, 246);
             }
             50%{
                 transform: translateY(250px) scale(2.7);
                 opacity: 2;
+                color:black;
                 background-color:rgb(67, 174, 246) ;
-                
+                text-shadow: 0 0 20px rgb(67, 174, 246);
             }
             100%{
                 transform:scale(1);
                 opacity: 1;
+                color:white;
                 backdrop-filter: blur(5px);
             }
         }
@@ -58,9 +66,14 @@
             .que{
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 40px;
-                text-shadow: 0 0 20px rgb(76, 165, 233),0 0 40px rgb(76, 165, 233);
+                text-shadow:-1px -1px 0 #000,
+                            1px 1px 0 #000,
+                            -1px 1px 0 #000,
+                            1px -1px 0 #000,
+                            0 0 20px rgb(76, 165, 233), 0 0 20px black;
                 text-align: center;
                 animation: slideInFromUP 4s ease-in-out;
+                color:white;
             }
             @keyframes slideInFromUP {
     0% {
@@ -137,6 +150,12 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 30px;
                 text-align: center;
+                color:white;
+                text-shadow:-1px -1px 0 #000,
+                            1px 1px 0 #000,
+                            -1px 1px 0 #000,
+                            1px -1px 0 #000,
+                            0 0 20px rgb(76, 165, 233), 0 0 20px black;
               animation: slideInFromZ 5s ease-in-out;
             }
             footer{
