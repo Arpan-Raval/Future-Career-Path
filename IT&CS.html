@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="iti.css">
         <title>Information Technology and Computer Science</title>
         <style>
 body{
@@ -52,29 +53,6 @@ header h1{
     top:10px;
     background-color: white;
 }
-
-@keyframes popup {
-    0% {
-        transform:scale(0);
-        opacity: 0;
-    }
-    25% {
-        transform:scale(0.25);
-        opacity: 0;
-    }
-    50% {
-        transform:scale(0.50);
-        opacity: 0;
-    }
-    75% {
-        transform:scale(0.75);
-        opacity: 0;
-    }
-    100% { 
-        transform:scale(1);
-        opacity: 1;
-    }
-}
     .aboutcs{
         font-family: Arial, Helvetica, sans-serif;
         width: 55%;
@@ -95,7 +73,7 @@ header h1{
         box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
     }
     .aboutcs h2{
-        text-shadow: 0 0 20px rgb(76, 165, 233);
+    text-shadow: 0 0 20px rgb(76, 165, 233);
     text-align: center;
     font-size:30px;
     cursor:pointer;
@@ -107,43 +85,6 @@ header h1{
     main {
     display: flex;
     justify-content: center;
-}
-.benefits{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    transition:box-shadow 0.3s ease;
-    animation: popup 2s ease-in-out;
-}
-.benefits:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
-}
-#b-h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    font-size: 40px;
-    cursor:pointer;
-    text-align:center;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-#bAfter-h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    font-size: 30px;
-    cursor:pointer;
-    text-align:left;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-.benefits li{
-    margin-bottom: 10px;
-    font-size: large;
 }
 .career{
     font-family: Arial, Helvetica, sans-serif;
@@ -229,115 +170,6 @@ header h1{
         transform: translateY(0);
         opacity: 1;
     }
-}
-.exam{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    align-items: center;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;
-    transition:box-shadow 0.3s ease;
-    background-color: white;
-    animation: popup 3s ease-in-out;
-    border-radius: 10px;
-}
-.exam:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-.exam h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    position:sticky;
-    top:10px;
-    background-color: white;
-    cursor:pointer;
-}
-.exam h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
-.exam li{
-    margin-bottom: 10px;
-    font-size: large;
-}
-.time{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    padding:5px;
-    border: 2px solid #000;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    background-color: white;
-    animation: popup 3.5s ease-in-out;
-}
-.time:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-.time h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow:0 0 5px rgb(76, 165, 233) ;
-    position:sticky;
-    top:10px;
-    background-color: white;
-    cursor:pointer;
-}
-.time h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
-.college h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 5px rgb(76, 165, 233);
-    color: black;
-    top:10px;
-    background-color:white;
-    padding:20px;
-    border: 2px solid #000;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: popup 4s ease-in-out;
-}
-.college h2:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-table {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-th, td {
-    padding: 12px 15px;
-}
-tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-tr:hover {
-    background-color: #f1f1f1;
-}
-footer{
-    text-align: center;
-    padding: 5px;
-    background: linear-gradient(360deg, rgb(76, 165, 233), rgb(172, 203, 227));
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    text-shadow:0 0 20px black;
 }
         </style>
     </head>
