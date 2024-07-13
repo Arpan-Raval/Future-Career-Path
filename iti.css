@@ -108,6 +108,21 @@ header h1{
 #h1{
     text-shadow: 0 0 20px rgb(76, 165, 233);
 }
+#img{
+    display:none;
+}
+#li{
+    display:none;
+}
+/* after */
+#img2{
+    display:block;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+#li2{
+    display:block;
+    animation:slideInFromDown 1s ease-in-out;
+}
 .exam{
     font-family: Arial, Helvetica, sans-serif;
     padding:5px;
