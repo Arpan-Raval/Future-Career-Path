@@ -226,18 +226,6 @@ header h1{
 .college h2:hover{
     box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
 }
-/* .college-List{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    background-color:white;
-text-align:center;
-    position : relative;
-    margin-top: 10px;
-} */
 .first,.second,.third,.fourth,.fifth,.sixth{
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #000;
