@@ -245,6 +245,11 @@ text-align:center;
     background-color:white;
     text-align:center;
     padding:20px;
+    transition:all 0.3s ;
+}
+.first:hover,.second:hover,.third:hover,.fourth:hover,.fifth:hover,.sixth:hover{
+    background-color:rgb(213, 115, 238);
+    color: white;
 }
 footer{
     text-align: center;
