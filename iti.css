@@ -226,20 +226,21 @@ header h1{
 .college h2:hover{
     box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
 }
-table {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+.college-List{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:5px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
+    color: black;
+    background-color:white;
+    text-align:center;
+    position : relative;
+    margin-top: 10px;
 }
-th, td {
-    padding: 12px 15px;
-}
-tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-tr:hover {
-    background-color: #f1f1f1;
+.first{
+    border: 2px solid #000;
+
 }
 footer{
     text-align: center;
