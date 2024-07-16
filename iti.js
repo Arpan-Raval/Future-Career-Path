@@ -91,7 +91,7 @@ let timetitle= document.querySelector(".time h2");
 timetitle.addEventListener("click", ()=>{
     if(timeinfo.style.display==="none"){
         timeinfo.style.display="block";
-        time.style.maxWidth = "80%";
+        time.style.maxWidth = "90%";
     } else {
         timeinfo.style.display="none";
         time.style.maxWidth = "100%";
@@ -101,6 +101,8 @@ timetitle.addEventListener("click", ()=>{
 let college = document.querySelector(".college");
 let collegeinfo = document.querySelector(".content7");
 let collegetitle= document.querySelector(".college h2");
+let collegename= document.querySelectorAll(".college-name");
+let collegelink=document.querySelectorAll("a");
 
 collegetitle.addEventListener("click", ()=>{
     if(collegeinfo.style.display==="none"){
@@ -108,4 +110,17 @@ collegetitle.addEventListener("click", ()=>{
     } else {
         collegeinfo.style.display="none";
     }
+});
+
+collegename.forEach((collegename, index)=>{
+    collegename.addEventListener("mouseover", ()=>{
+        collegename.style.backgroundColor="rgb(71, 178, 227)";
+        collegelink[index].style.color="white";
+    });
+
+    collegename.addEventListener("mouseout", ()=>{
+        collegename.style.backgroundColor="white";
+        collegelink[index].style.color="black";
+    });
+
 });
