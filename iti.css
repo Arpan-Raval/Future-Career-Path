@@ -226,7 +226,7 @@ header h1{
 .college h2:hover{
     box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
 }
-.first,.second,.third,.fourth,.fifth,.sixth{
+.college-name{
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #000;
     color: black;
@@ -235,10 +235,12 @@ header h1{
     padding:20px;
     transition:all 0.3s ;
 }
-.first:hover,.second:hover,.third:hover,.fourth:hover,.fifth:hover,.sixth:hover{
-    background-color:rgb(213, 115, 238);
+
+.college-name:hover{
+    background-color:rgb(71, 178, 227);
     color: white;
 }
+
 footer{
     text-align: center;
     padding: 5px;
