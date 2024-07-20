@@ -3,29 +3,6 @@
         <title>Refrigeration and Air Conditioning</title>
         <link rel="stylesheet" href="iti.css">
     <style>
-body{
-    background-color: rgb(172, 203, 227);
-}
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: large;
-    padding: 5px;
-    color: white;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
-}
-header h1{
-    animation:slideUP 1.5s ease;
-}
-@keyframes slideUP{
-    0%{
-        transform:translateY(-100%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
 .about{
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 10px;
@@ -49,79 +26,6 @@ header h1{
     text-align: center;
     font-size: 30px;
 }
-@keyframes slideInFromZ {
-    0% {
-        transform: translateZ(-200%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-.benefits{
-    font-family: Arial, Helvetica, sans-serif;
-        border-radius:10px;
-        padding:5px;
-        border: 2px solid #000;
-        background-color: white;
-        box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-        color: black;
-        position : relative;
-        transition:box-shadow 0.3s ease;
-        animation:slideInFromDown 1s ease;
-    }
-    @keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.benefits:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
-}
-.benefits h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    text-align: center;
-    font-size: 30px;
-}
-.career{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    animation:slideInFromDown 2s ease-in-out;
-    animation-delay: 2s;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;    
-}
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.career h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    color: white;
-    position:sticky;
-    top:10px;
-    background-color:rgb(172, 203, 227);
-}
-.career h1{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
 #ra,#hvac,#se,#is,#mt,#tsr,#ebo,#psm,#i,#qci{
     border: solid;
     background:image 30px ;
@@ -144,109 +48,6 @@ header h1{
     margin-bottom: 20px;
     font-size: large;
 }
-
-.exam{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    align-items: center;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;
-    transition:box-shadow 0.3s ease;
-    background-color: white;
-}
-.exam:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-.exam h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-.exam li{
-    margin-bottom: 10px;
-    font-size: large;
-}
-.exam h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
-.time{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    padding:5px;
-    border: 2px solid #000;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin: 20px auto;
-    max-width: 80%;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    background-color: white;
-}
-.time:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-.time h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow:0 0 5px rgb(76, 165, 233) ;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-.time h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
-.college h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 5px rgb(76, 165, 233);
-    color: black;
-    background-color:white;
-    padding:5px;
-    border: 2px solid #000;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-.college h2:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-table {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-th, td {
-    padding: 12px 15px;
-}
-tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-tr:hover {
-    background-color: #f1f1f1;
-}
-footer{
-    text-align: center;
-    padding: 5px;
-    background: linear-gradient(360deg, rgb(76, 165, 233), rgb(172, 203, 227));
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    text-shadow:0 0 20px black;
-}
-
 </style>
     </head>
     <body>
@@ -519,7 +320,22 @@ footer{
        <footer>
         <p><u><i><b> Thank You </b></i></u></p>
         <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
-      </footer> 
+      </footer>
+      <script>
+        //About
+let about = document.querySelector(".about");
+let aboutinfo = document.querySelector(".content1");
+let abouttitle= document.querySelector(".about h2");
+
+abouttitle.addEventListener("click", ()=>{
+    if(aboutinfo.style.display==="none"){
+        aboutinfo.style.display="block";
+    }
+    else{
+        aboutinfo.style.display="none";
+    }
+});
+      </script>
       <script src="iti.js"></script> 
     </body>
 </html>
