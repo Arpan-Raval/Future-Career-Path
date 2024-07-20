@@ -1,27 +1,40 @@
-//About IT
-let aboutit = document.querySelector(".aboutit");
-let aboutitinfo = document.querySelector(".content1");
-let aboutittitle= document.querySelector(".aboutit h2");
+// //About IT
+// let aboutit = document.querySelector(".aboutit");
+// let aboutitinfo = document.querySelector(".content1");
+// let aboutittitle= document.querySelector(".aboutit h2");
 
-aboutittitle.addEventListener("click", ()=>{
-    if(aboutitinfo.style.display==="none"){
-        aboutitinfo.style.display="block";
+// aboutittitle.addEventListener("click", ()=>{
+//     if(aboutitinfo.style.display==="none"){
+//         aboutitinfo.style.display="block";
+//     }
+//     else{
+//         aboutitinfo.style.display="none";
+//     }
+// });
+// //About CS
+// let aboutcs = document.querySelector(".aboutcs");
+// let aboutcsinfo = document.querySelector(".content2");
+// let aboutcstitle= document.querySelector(".aboutcs h2");
+
+// aboutcstitle.addEventListener("click", ()=>{
+//     if(aboutcsinfo.style.display==="none"){
+//         aboutcsinfo.style.display="block";
+//     }
+//     else{
+//         aboutcsinfo.style.display="none";
+//     }
+// });
+//About
+let about = document.querySelector(".about");
+let aboutinfo = document.querySelector(".content1");
+let abouttitle= document.querySelector(".about h2");
+
+abouttitle.addEventListener("click", ()=>{
+    if(aboutinfo.style.display==="none"){
+        aboutinfo.style.display="block";
     }
     else{
-        aboutitinfo.style.display="none";
-    }
-});
-//About CS
-let aboutcs = document.querySelector(".aboutcs");
-let aboutcsinfo = document.querySelector(".content2");
-let aboutcstitle= document.querySelector(".aboutcs h2");
-
-aboutcstitle.addEventListener("click", ()=>{
-    if(aboutcsinfo.style.display==="none"){
-        aboutcsinfo.style.display="block";
-    }
-    else{
-        aboutcsinfo.style.display="none";
+        aboutinfo.style.display="none";
     }
 });
 //Benefits
