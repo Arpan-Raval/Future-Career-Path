@@ -16,7 +16,7 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     background-color: white;
-    animation: slideInFromZ 2s ease;
+    animation: popup 1.5s ease-in-out;
 }
 .about:hover{
     box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
@@ -25,6 +25,28 @@
     text-shadow: 0 0 20px rgb(76, 165, 233);
     text-align: center;
     font-size: 30px;
+}
+@keyframes popup {
+    0% {
+        transform:scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform:scale(0.25);
+        opacity: 0;
+    }
+    50% {
+        transform:scale(0.50);
+        opacity: 0;
+    }
+    75% {
+        transform:scale(0.75);
+        opacity: 0;
+    }
+    100% { 
+        transform:scale(1);
+        opacity: 1;
+    }
 }
 #ra,#hvac,#se,#is,#mt,#tsr,#ebo,#psm,#i,#qci{
     border: solid;
