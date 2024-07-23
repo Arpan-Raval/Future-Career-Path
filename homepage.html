@@ -2,13 +2,7 @@
     <head>
         <title>Future career path</title>
 
-        <script>
-         function RedirectToSelected(){
-             var dropdown = document.getElementById("careersearch");
-             var selectedOption = dropdown.options[dropdown.selectedIndex].value;
-             window.location.href = selectedOption;
-            }
-        </script>
+
         <style>
            body{
                font-family: Arial, Helvetica, sans-serif;
@@ -216,5 +210,13 @@
         <p><u><i><b> Thank You </b></i></u></p>
         <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
       </footer>  
+
+      <script>
+        function RedirectToSelected(){
+            var dropdown = document.getElementById("careersearch");
+            var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+            window.location.href = selectedOption;
+           }
+       </script>
     </body>
 </html>
