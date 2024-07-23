@@ -8,6 +8,8 @@
     <style>
         body{
     background-color: rgb(172, 203, 227);
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container1 h1{
     text-shadow: 0 0 20px rgb(76, 165, 233);
@@ -43,21 +45,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
 }
+.container1, .container2 {
+            width: 100%;
+            max-width: 45%;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 8px;
+            box-shadow: 0 0 5px black, 0 0 5px black;
+            color: black;
+            background-color: white;
+        }
+        .container1:hover, .container2:hover {
+            box-shadow: 0 0 30px rgb(76, 165, 233), 0 0 30px black;
+        }
+
 .container1{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 40%;
-    height: 50%;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 8px;
-    box-shadow:0 0 5px black,0 0 5px black;
-    color: black;
-    animation: slideInFromLeft 1.5s ease;
-    background-color: white;
+    animation:slideInFromLeft 1s ease;
 }
-.container1:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
+.container2{
+    animation:slideInFromRight 1s ease;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -68,21 +77,6 @@ main {
         transform: translateX(0);
         opacity: 1;
     }
-}
-.container2{
-    font-family: Arial, Helvetica, sans-serif;
-    width:50%;
-    height: 40%;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 8px;
-    box-shadow:0 0 5px black,0 0 5px black;
-    color: black;
-    animation: slideInFromRight 1.5s ease;
-    background-color: white;
-}
-.container2:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
 }
 @keyframes slideInFromRight {
     0% {
@@ -110,7 +104,7 @@ main {
 }
 .container3 {
     margin:20px auto;
-    width: 80%;
+    max-width: 80%;
     padding: 10px;
     border-radius: 8px;
     box-shadow:0 0 20px black,0 0 40px black;
@@ -149,6 +143,18 @@ button:hover {
 #output {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+            .container1, .container2 {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .container3 {
+                width: 100%;
+                max-width: 90%;
+            }
+        }
     </style>
 </head>
 <body>   
@@ -168,7 +174,7 @@ button:hover {
             <li><b>Entrepreneurial Opportunities:</b> ITI graduates have the option to start their own businesses or work as freelancers in their respective trades, providing them with flexibility and independence.</li>
         </ul>
     </div>
-  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp  &nbsp 
+
     <div class ="container2">
         <u><h1>IMPORTANCE</h1></u>
         <ul>
