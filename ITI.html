@@ -144,6 +144,18 @@ button:hover {
     margin-top: 20px;
 }
 
+footer{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(360deg, rgb(76, 165, 233), rgb(172, 203, 227));
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    text-shadow:0 0 20px black;
+}
+
 @media (max-width: 768px) {
             .container1, .container2 {
                 width: 100%;
@@ -202,7 +214,11 @@ button:hover {
             </select>
             <button type="button" onclick="redirectToSelected()">Search</button>
         </form>
-
+</div>
+        <footer>
+            <p><u><i><b> Thank You </b></i></u></p>
+            <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
+          </footer>  
         <script> 
             function redirectToSelected() {
                 var dropdown = document.getElementById("interest");
