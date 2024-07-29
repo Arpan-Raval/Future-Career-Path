@@ -1,16 +1,28 @@
 body{
     background-color: rgb(172, 203, 227);
 }
-header{
+header {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: large;
-    display:flex;
     padding: 5px;
     color: white;
     text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
     background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
+    position: relative;
+}
+
+header .back {
+    position: absolute;
+    left: 20px;
+}
+
+header .title {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
 }
 header button {
     border: none;
@@ -19,12 +31,12 @@ header button {
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-radius:15px;
-    animation:slideUP 1.5s ease;
+    border-radius: 15px;
+    animation: slideUP 1.5s ease;
 }
-header button:hover{
-    background-color:rgb(80, 169, 241);
-    color:white;
+header button:hover {
+    background-color: rgb(80, 169, 241);
+    color: white;
 }
 header button i {
     margin-right: 5px;
@@ -62,6 +74,23 @@ header h1{
     100% { 
         transform:scale(1);
         opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .back {
+        position: relative;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    header .title {
+        justify-content: flex-start;
+        padding: 0;
     }
 }
 .benefits{
@@ -139,6 +168,9 @@ header h1{
     #career-option{
         flex-direction:column;
         align-items: center;
+    }
+    header button{
+        margin-right:0%;
     }
 }
 @media (max-width: 320px){
