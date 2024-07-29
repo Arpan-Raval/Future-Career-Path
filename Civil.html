@@ -3,32 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iti.css">
     <title>Construction and Civil Engineering</title>
 
     <style>
-body{
-    background-color: rgb(172, 203, 227);
-}
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: large;
-    padding: 5px;
-    color: white;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
-}
-header h1{
-    animation:slideUP 1.5s ease;
-}
-@keyframes slideUP{
-    0%{
-        transform:translateY(-100%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
 .about{
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 10px;
@@ -42,7 +20,7 @@ header h1{
     border-radius: 10px;
     transition: all 0.3s ease;
     background-color: white;
-    animation: slideInFromZ 2s ease;
+    animation: popup 1.5s ease-in-out;
 }
 .about:hover{
     box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
@@ -51,82 +29,29 @@ header h1{
     text-shadow: 0 0 20px rgb(76, 165, 233);
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }
-@keyframes slideInFromZ {
+@keyframes popup {
     0% {
-        transform: translateZ(-200%);
+        transform:scale(0);
         opacity: 0;
     }
-    100% {
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-.benefits{
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius:10px;
-    padding:5px;
-    border: 2px solid #000;
-    background-color: white;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    transition:box-shadow 0.3s ease;
-    animation:slideInFromDown 1s ease;
-}
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
+    25% {
+        transform:scale(0.25);
         opacity: 0;
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.benefits:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
-}
-.benefits h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    text-align: center;
-    font-size: 30px;
-}
-.benefits li{
-    margin-bottom: 5px;
-}
-.career{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    animation-delay: 2s;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;    
-    animation:slideInFromDown 2s ease-in-out;
-}
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
+    50% {
+        transform:scale(0.50);
         opacity: 0;
     }
-    100% {
-        transform: translateY(0);
+    75% {
+        transform:scale(0.75);
+        opacity: 0;
+    }
+    100% { 
+        transform:scale(1);
         opacity: 1;
     }
-}
-.career h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    color: white;
-    position:sticky;
-    top:10px;
-    background-color:rgb(172, 203, 227);
-}
-.career h1{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
 }
 #d,#s,#m,#c,#p,#e,#f,#sm,#se,#te{
     border: solid;
@@ -149,110 +74,40 @@ header h1{
     margin-bottom: 20px;
     font-size: large;
 }
-.exam{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    align-items: center;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;
-    transition:box-shadow 0.3s ease;
-    background-color: white;
+#img{
+    display:none;
 }
-.exam:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
+#li{
+    display:none;
 }
-.exam h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    position:sticky;
-    top:10px;
-    background-color: white;
+/* after */
+#img2{
+    display:block;
+    animation: slideInFromLeft 1s ease-in-out;
 }
-.exam li{
-    margin-bottom: 10px;
-    font-size: large;
+#li2{
+    display:block;
+    animation:slideInFromDown 1s ease-in-out;
 }
-.exam h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
-.time{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    padding:5px;
-    border: 2px solid #000;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin: 20px auto;
-    max-width: 80%;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    background-color: white;
-}
-.time:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-.time h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow:0 0 5px rgb(76, 165, 233) ;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-.time h3{
-    font-size: 25px;
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-}
-.time li{
-    margin-bottom: 10px;
-    font-size: large;
-}
-.college h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 5px rgb(76, 165, 233);
-    color: black;
-    background-color:white;
-    padding:5px;
-    border: 2px solid #000;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-.college h2:hover{
-    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
-}
-table {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-th, td {
-    padding: 12px 15px;
-}
-tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-tr:hover {
-    background-color: #f1f1f1;
-}
-footer{
-    text-align: center;
-    padding: 5px;
-    background: linear-gradient(360deg, rgb(76, 165, 233), rgb(172, 203, 227));
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    text-shadow:0 0 20px black;
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
     </style>
 </head>
@@ -261,7 +116,7 @@ footer{
     <div class="about">
        
         <h2>About Construction and Civil Engineering:</h2>
-        <div class="content1" style="display: none;"></div>
+        <div class="content1" style="display: none;">
     <ul >
         <li>Construction and Civil Engineering courses offered by Industrial Training Institutes (ITIs) focus on imparting practical skills and theoretical knowledge necessary for working in the construction and civil engineering industry. These courses are designed to meet the growing demand for skilled workers in various sectors of construction, including building construction, infrastructure development, and maintenance of civil structures.</li>
         <li><b>Key Objectives:</b></li>
