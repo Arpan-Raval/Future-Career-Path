@@ -4,11 +4,27 @@ body{
 header{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    align-items: center;
     font-size: large;
+    display:flex;
     padding: 5px;
     color: white;
     text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
     background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
+}
+header button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius:15px;
+    margin-right:10%;
+    animation:slideUP 1.5s ease;
+}
+header button i {
+    margin-right: 5px;
 }
 header h1{
     animation:slideUP 1.5s ease;
@@ -16,9 +32,11 @@ header h1{
 @keyframes slideUP{
     0%{
         transform:translateY(-100%);
+        opacity:0;
     }
     100%{
         transform: translateY(0%);
+        opacity:1;
     }
 }
 @keyframes popup {
