@@ -105,6 +105,27 @@ header h1{
     background-color:rgb(172, 203, 227);
     cursor:pointer;
 }
+#career-option{
+    border: solid;
+    background:image 30px;
+    display: flex;
+    border-radius: 1%;
+    margin-bottom: 20px;
+    box-shadow:0 0 10px black;
+    transition:box-shadow 0.3s ease;
+    background-color: white;
+}
+#career-option:hover{
+    box-shadow:0 0 80px rgb(76, 165, 233),0 0 80px black;
+}
+.career-option{
+    margin-left: 20px;
+    max-width: auto;
+}
+.career-option li{
+    margin-bottom: 20px;
+    font-size: large;
+}
 #h1{
     text-shadow: 0 0 20px rgb(76, 165, 233);
 }
