@@ -6,29 +6,6 @@
     <link rel="stylesheet" href="iti.css">
     <title>Electrical and Electronics</title>
     <style>
-body{
-    background-color: rgb(172, 203, 227);
-}
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: large;
-    padding: 5px;
-    color: white;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    background: linear-gradient(180deg, rgb(76, 165, 233), rgb(172, 203, 227));
-}
-header h1{
-    animation:slideUP 1.5s ease;
-}
-@keyframes slideUP{
-    0%{
-        transform:translateY(-100%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
 .about{
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 10px;
@@ -42,7 +19,7 @@ header h1{
     border-radius: 10px;
     transition: all 0.3s ease;
     background-color: white;
-    animation: slideInFromZ 2s ease;
+    animation:popup 1.5s ease-in-out;
 }
 .about:hover{
     box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
@@ -56,80 +33,27 @@ header h1{
     background-color: white;
     cursor:pointer;
 }
-@keyframes slideInFromZ {
+@keyframes popup {
     0% {
-        transform: translateZ(-200%);
+        transform:scale(0);
         opacity: 0;
     }
-    100% {
-        transform: translateZ(0);
+    25% {
+        transform:scale(0.25);
+        opacity: 0;
+    }
+    50% {
+        transform:scale(0.50);
+        opacity: 0;
+    }
+    75% {
+        transform:scale(0.75);
+        opacity: 0;
+    }
+    100% { 
+        transform:scale(1);
         opacity: 1;
     }
-}
-.benefits{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    transition:box-shadow 0.3s ease;
-    animation: popup 2s ease-in-out;
-}
-.benefits:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
-}
-#b-h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    font-size: 40px;
-    cursor:pointer;
-    text-align:center;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-#bAfter-h2{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
-    font-size: 30px;
-    cursor:pointer;
-    text-align:left;
-    position:sticky;
-    top:10px;
-    background-color: white;
-}
-.benefits li{
-    margin-bottom: 10px;
-    font-size: large;
-}
-.career{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    animation: popup 2.5s ease-in-out;
-    box-shadow:0 0 5px rgb(76, 165, 233),0 0 5px black;
-    color: black;
-    position : relative;
-    margin-top: 10px;
-    transition:all 0.3s ease;
-}
-.career:hover{
-    box-shadow:0 0 30px rgb(76, 165, 233),0 0 30px black;
-}
-.career h2{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 0 0 20px rgb(76, 165, 233), 0 0 20px black;
-    color: white;
-    position:sticky;
-    top:10px;
-    background-color:rgb(172, 203, 227);
-    cursor:pointer;
-}
-#h1{
-    text-shadow: 0 0 20px rgb(76, 165, 233);
 }
 #E,#mt,#eea,#et,#fst,#plc,#spt,#tt,#qci,#seet,#fs,#psj,#ti{
     border: solid;
@@ -152,12 +76,48 @@ header h1{
     margin-bottom: 20px;
     font-size: large;
 }
+#img{
+    display:none;
+}
+#li{
+    display:none;
+}
+/* after */
+#img2{
+    display:block;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+#li2{
+    display:block;
+    animation:slideInFromDown 1s ease-in-out;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
     </style>
 </head>
 <body>
     <header><h1><u><b>ELECTRICAL AND ELECTRONICS</b></u></h1></header>
     <div class="about">
         <h2><b><u>About Electrical and Electronics:</u></b></h2>
+        <div class="content1" style="display: none;">
         <h3><b><u>Eligibility Criteria:</u></b></h3>
         <ul>
             <li>Minimum educational qualification is typically a 10th-grade pass.</li>
@@ -192,9 +152,11 @@ header h1{
                 <li>Working with programmable logic controllers (PLCs)</li>
             </ul>
         </ul>
+        </div>
     </div>
     <div class="benefits">
         <h2 id="b-h2"><u><b>Benefits :</b></u></h2>
+        <div class="content3" style="display: none;">
         <ol>
             <li><b>Hands-On Training:</b> Practical experience with real equipment and systems.</li>
             <li><b>Job Readiness:</b> Prepares students for immediate employment in various sectors.</li>
@@ -203,14 +165,16 @@ header h1{
             <li><b>Skill Development:</b> Gains in troubleshooting, installation, and repair skills.</li>
             <li><b>Cost-Effective Education:</b> Affordable training with high employability.</li>
         </ol>
+        </div>
     </div>
     <div class="career">
         <h2><b><u>CAREER OPPORTUNITIES & THEIR INFORMATION:</u></b></h2>
+        <div class="content4" style="display: none;">
        <div id="E">
-          <img src="https://local-electrician-in-bedford.co.uk/images/img/who-weare.jpg" width="400px" height="auto">
+          <img id="img" src="https://www.deltaelectric.net/wp-content/uploads/2023/02/commercial-electrician.jpg" width="400px" height="auto">
           <div class="E">
           <h1 id="h1"><b><u>Electrician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Install, repair, and maintain electrical systems in homes, businesses, and factories.</li>
@@ -223,10 +187,10 @@ header h1{
            </div>
        </div>
        <div id="mt">
-          <img src="https://ftmaintenance.com/wp-content/uploads/2021/05/What-Makes-a-Good-Maintenance-Technician.jpg" width="400px" height="auto">
+          <img id="img" src="https://ftmaintenance.com/wp-content/uploads/2021/05/What-Makes-a-Good-Maintenance-Technician.jpg" width="400px" height="auto">
           <div class="mt">
           <h1 id="h1"><b><u>Maintenance Technician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Perform regular inspections of equipment and machinery.</li>
@@ -239,10 +203,10 @@ header h1{
            </div>
        </div>
        <div id="eea">
-          <img src="https://www.insideadvisorpro.com/wp-content/uploads/2023/03/Electrician-in-Training.jpg" width="400px" height="auto">
+          <img id="img" src="https://www.insideadvisorpro.com/wp-content/uploads/2023/03/Electrician-in-Training.jpg" width="400px" height="auto">
           <div class="eea">
           <h1 id="h1"><b><u>Electrical Engineer Assistant</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Assist in designing and developing electrical systems and components.</li>
@@ -255,10 +219,10 @@ header h1{
            </div>
        </div>
        <div id="et">
-          <img src="https://blog.acsindustrial.com/wp-content/uploads/2022/09/what-makes-a-great-electronic-repair-technician.jpg" width="400px" height="auto">
+          <img id="img" src="https://blog.acsindustrial.com/wp-content/uploads/2022/09/what-makes-a-great-electronic-repair-technician.jpg" width="400px" height="auto">
           <div class="et">
           <h1 id="h1"><b><u>Electronics Technician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Assemble, install, and repair electronic equipment and devices.</li>
@@ -271,10 +235,10 @@ header h1{
            </div>
        </div>
        <div id="fst">
-          <img src="https://assets-global.website-files.com/5b6df8bb681f89c158b48f6b/5d52b699813c0052ba1c91d0_field-technician.jpg" width="400px" height="auto">
+          <img id="img" src="https://assets-global.website-files.com/5b6df8bb681f89c158b48f6b/5d52b699813c0052ba1c91d0_field-technician.jpg" width="400px" height="auto">
           <div class="fst">
           <h1 id="h1"><b><u>Field Service Technician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Travel to customer sites to install, repair, and maintain electrical and electronic systems.</li>
@@ -287,10 +251,10 @@ header h1{
            </div>
        </div>
        <div id="plc">
-          <img src="https://uploads-ssl.webflow.com/5e4c4a3efa444d6727501248/5eef615e731cbb288bd6877f_rsz_65.jpg" width="400px" height="auto">
+          <img id="img" src="https://uploads-ssl.webflow.com/5e4c4a3efa444d6727501248/5eef615e731cbb288bd6877f_rsz_65.jpg" width="400px" height="auto">
           <div class="plc">
           <h1 id="h1"><b><u>PLC Programmer</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Develop and write PLC programs for automation systems.</li>
@@ -303,10 +267,10 @@ header h1{
            </div>
        </div>
        <div id="spt">
-          <img src="https://i.ytimg.com/vi/HqVFSNw_vy4/maxresdefault.jpg" width="400px" height="auto">
+          <img id="img" src="https://i.ytimg.com/vi/HqVFSNw_vy4/maxresdefault.jpg" width="400px" height="auto">
           <div class="spt">
           <h1 id="h1"><b><u>Solar Power Technician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Install solar panels and related equipment.</li>
@@ -319,10 +283,10 @@ header h1{
            </div>
        </div>
        <div id="tt">
-          <img src="https://img.freepik.com/premium-photo/male-engineer-field-work-helmet-telecommunication-tower-controls-electrical-installations_272843-2.jpg?w=2000" width="400px" height="auto">
+          <img id="img" src="https://img.freepik.com/premium-photo/male-engineer-field-work-helmet-telecommunication-tower-controls-electrical-installations_272843-2.jpg?w=2000" width="400px" height="auto">
           <div class="tt">
           <h1 id="h1"><b><u>Telecommunications Technician</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Install and maintain communication systems, including telephone, internet, and cable networks.</li>
@@ -335,10 +299,10 @@ header h1{
            </div>
        </div>
        <div id="qci">
-          <img src="https://learn-quality.com/wp-content/uploads/2021/10/What-Does-a-Quality-Control-Inspector-Do.jpg" width="400px" height="auto">
+          <img id="img" src="https://learn-quality.com/wp-content/uploads/2021/10/What-Does-a-Quality-Control-Inspector-Do.jpg" width="400px" height="auto">
           <div class="qci">
           <h1 id="h1"><b><u>Quality Control Inspector</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Inspect electrical and electronic products to ensure they meet quality standards.</li>
@@ -351,10 +315,10 @@ header h1{
            </div>
        </div>
        <div id="seet">
-          <img src="https://www.shoptasa.com/wp-content/uploads/2022/09/ELECTRICIAN-PHOTO-1030x687-800x500_c.jpg" width="400px" height="auto">
+          <img id="img" src="https://www.shoptasa.com/wp-content/uploads/2022/09/ELECTRICIAN-PHOTO-1030x687-800x500_c.jpg" width="400px" height="auto">
           <div class="seet">
           <h1 id="h1"><b><u>Self-Employment (Electrician/Technician)</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Offer electrical and electronic services directly to customers.</li>
@@ -367,10 +331,10 @@ header h1{
            </div>
        </div>
        <div id="fs">
-          <img src="https://eechk.org/wp-content/uploads/2017/10/FS-feat.jpg" width="400px" height="auto">
+          <img id="img" src="https://eechk.org/wp-content/uploads/2017/10/FS-feat.jpg" width="400px" height="auto">
           <div class="fs">
           <h1 id="h1"><b><u>Further Studies</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Pursue higher education such as diplomas or degrees in electrical or electronics engineering.</li>
@@ -383,10 +347,10 @@ header h1{
            </div>
        </div>
        <div id="psj">
-          <img src="https://www.excelrecruitment.com/wp-content/uploads/2023/04/Untitled-design-6.png" width="400px" height="auto">
+          <img id="img" src="https://www.excelrecruitment.com/wp-content/uploads/2023/04/Untitled-design-6.png" width="400px" height="auto">
           <div class="psj">
           <h1 id="h1"><b><u>Public Sector Jobs</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Work in government organizations or public sector undertakings (PSUs) in various roles.</li>
@@ -399,10 +363,10 @@ header h1{
            </div>
        </div>
        <div id="ti">
-          <img src="https://www.northernbedrockcorps.org/wp-content/uploads/Become-a-Technical-Instructor.png" width="400px" height="auto">
+          <img id="img" src="https://www.northernbedrockcorps.org/wp-content/uploads/Become-a-Technical-Instructor.png" width="400px" height="auto">
           <div class="ti">
           <h1 id="h1"><b><u>Technical Instructor</u></b></h1>
-      <ul>
+      <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
               <ul>
                 <li>Teach electrical and electronics courses at ITIs or vocational training centers.</li>
@@ -412,11 +376,13 @@ header h1{
                 <li>Mentor and guide students in their career development.</li>
               </ul>
       </ul>
-           </div>
-       </div>
+        </div>
+          </div>
+        </div>
     </div>
     <div class="exam">
-        <h2><b>Exam</b></h2>
+        <h2><b><u>Exam Information</u></b></h2>
+        <div class="content5" style="display: none;">
         <h3><b>ITI Level Exams</b></h3>
         <ol>
             <li><b>ITI Entrance Exams (State-Level).</b></li>
@@ -514,9 +480,11 @@ header h1{
                 <li>Typically requires passing the Fundamentals of Engineering (FE) exam and the Principles and Practice of Engineering (PE) exam.</li>
             </ul>
         </ol>
+        </div>
     </div>
     <div class="time">
         <h2><b><u>TIME</u></b></h2>
+        <div class="content6" style="display: none;">
         <ol>
             <li><b> ITI Certification (2 Years)</b></li>
             <ul>
@@ -551,9 +519,11 @@ header h1{
                 <li><b>Principles and Practice of Engineering (PE) Exam:</b> 4 years of work experience after passing the FE exam.</li>
             </ul>
         </ol>
+        </div>
     </div>
     <div class="college">
         <h2>Top Colleges In <b><u>Gujarat</u></b>:</h2>
+        <div class="content7" style="display: none;">
 
         <div class="college-name">
             <a href="https://nirmauni.ac.in/">Nirma University, Ahmedabad</a>
@@ -574,10 +544,27 @@ header h1{
             <td><a href="https://itimandvisurat.gujarat.gov.in/">Government ITI Surat</a>
         </div>
 
+        </div>
     </div>
     <footer>
         <p><u><i><b> Thank You </b></i></u></p>
         <p>&copy; 2024 My Website | e-mail: arpanraval1112@gmail.com</p>
     </footer>
+    <script>
+        //About
+let about = document.querySelector(".about");
+let aboutinfo = document.querySelector(".content1");
+let abouttitle= document.querySelector(".about h2");
+
+abouttitle.addEventListener("click", ()=>{
+    if(aboutinfo.style.display==="none"){
+        aboutinfo.style.display="block";
+    }
+    else{
+        aboutinfo.style.display="none";
+    }
+});
+    </script>
+    <script src="iti.js"></script> 
 </body>
 </html>
