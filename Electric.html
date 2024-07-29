@@ -55,62 +55,6 @@
         opacity: 1;
     }
 }
-#E,#mt,#eea,#et,#fst,#plc,#spt,#tt,#qci,#seet,#fs,#psj,#ti{
-    border: solid;
-    background:image 30px ;
-    display: flex;
-    border-radius: 1%;
-    margin-bottom: 20px;
-    box-shadow:0 0 10px black;
-    transition:box-shadow 0.3s ease;
-    background-color: white;
-}
-#E:hover,#mt:hover,#eea:hover,#et:hover,#fst:hover,#plc:hover,#spt:hover,#tt:hover,#qci:hover,#seet:hover,#fs:hover,#psj:hover,#ti:hover{
-    box-shadow:0 0 80px rgb(76, 165, 233),0 0 80px black;
-}
-.E,.mt,.eea,.et,.fst,.plc,.spt,.tt,.qci,.seet,.fs,.psj,.ti{
-    margin-left: 20px;
-    max-width: auto;
-}
-.E li,.mt li,.eea li,.et li,.fst li,.plc li,.spt li,.tt li,.qci li,.seet li,.fs li,.psj li,.ti li{
-    margin-bottom: 20px;
-    font-size: large;
-}
-#img{
-    display:none;
-}
-#li{
-    display:none;
-}
-/* after */
-#img2{
-    display:block;
-    animation: slideInFromLeft 1s ease-in-out;
-}
-#li2{
-    display:block;
-    animation:slideInFromDown 1s ease-in-out;
-}
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
     </style>
 </head>
 <body>
@@ -170,9 +114,9 @@
     <div class="career">
         <h2><b><u>CAREER OPPORTUNITIES & THEIR INFORMATION:</u></b></h2>
         <div class="content4" style="display: none;">
-       <div id="E">
+       <div id="career-option">
           <img id="img" src="https://www.deltaelectric.net/wp-content/uploads/2023/02/commercial-electrician.jpg" width="400px" height="auto">
-          <div class="E">
+          <div class="career-option">
           <h1 id="h1"><b><u>Electrician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -186,9 +130,9 @@
       </ul>
            </div>
        </div>
-       <div id="mt">
+       <div id="career-option">
           <img id="img" src="https://ftmaintenance.com/wp-content/uploads/2021/05/What-Makes-a-Good-Maintenance-Technician.jpg" width="400px" height="auto">
-          <div class="mt">
+          <div class="career-option">
           <h1 id="h1"><b><u>Maintenance Technician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -202,9 +146,9 @@
       </ul>
            </div>
        </div>
-       <div id="eea">
+       <div id="career-option">
           <img id="img" src="https://www.insideadvisorpro.com/wp-content/uploads/2023/03/Electrician-in-Training.jpg" width="400px" height="auto">
-          <div class="eea">
+          <div class="career-option">
           <h1 id="h1"><b><u>Electrical Engineer Assistant</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -218,9 +162,9 @@
       </ul>
            </div>
        </div>
-       <div id="et">
+       <div id="career-option">
           <img id="img" src="https://blog.acsindustrial.com/wp-content/uploads/2022/09/what-makes-a-great-electronic-repair-technician.jpg" width="400px" height="auto">
-          <div class="et">
+          <div class="career-option">
           <h1 id="h1"><b><u>Electronics Technician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -234,9 +178,9 @@
       </ul>
            </div>
        </div>
-       <div id="fst">
+       <div id="career-option">
           <img id="img" src="https://assets-global.website-files.com/5b6df8bb681f89c158b48f6b/5d52b699813c0052ba1c91d0_field-technician.jpg" width="400px" height="auto">
-          <div class="fst">
+          <div class="career-option">
           <h1 id="h1"><b><u>Field Service Technician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -250,9 +194,9 @@
       </ul>
            </div>
        </div>
-       <div id="plc">
+       <div id="career-option">
           <img id="img" src="https://uploads-ssl.webflow.com/5e4c4a3efa444d6727501248/5eef615e731cbb288bd6877f_rsz_65.jpg" width="400px" height="auto">
-          <div class="plc">
+          <div class="career-option">
           <h1 id="h1"><b><u>PLC Programmer</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -266,9 +210,9 @@
       </ul>
            </div>
        </div>
-       <div id="spt">
+       <div id="career-option">
           <img id="img" src="https://i.ytimg.com/vi/HqVFSNw_vy4/maxresdefault.jpg" width="400px" height="auto">
-          <div class="spt">
+          <div class="career-option">
           <h1 id="h1"><b><u>Solar Power Technician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -282,9 +226,9 @@
       </ul>
            </div>
        </div>
-       <div id="tt">
+       <div id="career-option">
           <img id="img" src="https://img.freepik.com/premium-photo/male-engineer-field-work-helmet-telecommunication-tower-controls-electrical-installations_272843-2.jpg?w=2000" width="400px" height="auto">
-          <div class="tt">
+          <div class="career-option">
           <h1 id="h1"><b><u>Telecommunications Technician</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -298,9 +242,9 @@
       </ul>
            </div>
        </div>
-       <div id="qci">
+       <div id="career-option">
           <img id="img" src="https://learn-quality.com/wp-content/uploads/2021/10/What-Does-a-Quality-Control-Inspector-Do.jpg" width="400px" height="auto">
-          <div class="qci">
+          <div class="career-option">
           <h1 id="h1"><b><u>Quality Control Inspector</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -314,9 +258,9 @@
       </ul>
            </div>
        </div>
-       <div id="seet">
+       <div id="career-option">
           <img id="img" src="https://www.shoptasa.com/wp-content/uploads/2022/09/ELECTRICIAN-PHOTO-1030x687-800x500_c.jpg" width="400px" height="auto">
-          <div class="seet">
+          <div class="career-option">
           <h1 id="h1"><b><u>Self-Employment (Electrician/Technician)</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -330,9 +274,9 @@
       </ul>
            </div>
        </div>
-       <div id="fs">
+       <div id="career-option">
           <img id="img" src="https://eechk.org/wp-content/uploads/2017/10/FS-feat.jpg" width="400px" height="auto">
-          <div class="fs">
+          <div class="career-option">
           <h1 id="h1"><b><u>Further Studies</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -346,9 +290,9 @@
       </ul>
            </div>
        </div>
-       <div id="psj">
+       <div id="career-option">
           <img id="img" src="https://www.excelrecruitment.com/wp-content/uploads/2023/04/Untitled-design-6.png" width="400px" height="auto">
-          <div class="psj">
+          <div class="career-option">
           <h1 id="h1"><b><u>Public Sector Jobs</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
@@ -362,9 +306,9 @@
       </ul>
            </div>
        </div>
-       <div id="ti">
+       <div id="career-option">
           <img id="img" src="https://www.northernbedrockcorps.org/wp-content/uploads/Become-a-Technical-Instructor.png" width="400px" height="auto">
-          <div class="ti">
+          <div class="career-option">
           <h1 id="h1"><b><u>Technical Instructor</u></b></h1>
       <ul id="li">
           <li><b>Roles and Responsibilities:</b></li>
