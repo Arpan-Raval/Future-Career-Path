@@ -33,7 +33,7 @@ let image = document.querySelectorAll("#img");
 let list = document.querySelectorAll("#li");
 
 title.forEach((title,index)=>{
-    title.addEventListener("mouseover", ()=>{
+    title.addEventListener("click", ()=>{
         if(image[index].id==="img"){
             image[index].setAttribute("id","img2");
             list[index].setAttribute("id","li2");
