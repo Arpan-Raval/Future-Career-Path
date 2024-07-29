@@ -151,6 +151,7 @@ header h1{
 }
 #h1{
     text-shadow: 0 0 20px rgb(76, 165, 233);
+    cursor:pointer;
 }
 #img{
     display:none;
@@ -161,15 +162,15 @@ header h1{
 /* after */
 #img2{
     display:block;
-    animation: slideInFromLeft 1s ease-in-out;
+    animation: slideInFromRight 1s ease-in-out;
 }
 #li2{
     display:block;
-    animation:slideInFromDown 1s ease-in-out;
+    animation:slideInFromUp 1s ease-in-out;
 }
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(20%);
         opacity: 0;
     }
     100% {
@@ -177,9 +178,9 @@ header h1{
         opacity: 1;
     }
 }
-@keyframes slideInFromDown {
+@keyframes slideInFromUp {
     0% {
-        transform: translateY(100%);
+        transform: translateY(-20%);
         opacity: 0;
     }
     100% {
