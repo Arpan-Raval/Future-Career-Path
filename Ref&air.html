@@ -52,63 +52,6 @@
         opacity: 1;
     }
 }
-#ra,#hvac,#se,#is,#mt,#tsr,#ebo,#psm,#i,#qci{
-    border: solid;
-    background:image 30px ;
-    display: flex;
-    border-radius: 1%;
-    margin-bottom: 20px;
-    box-shadow:0 0 10px black;
-    transition:box-shadow 0.3s ease;
-    background-color: white;
-    max-height: 230px;
-}
-#ra:hover,#hvac:hover,#se:hover,#is:hover,#mt:hover,#tsr:hover,#ebo:hover,#psm:hover,#i:hover,#qci:hover{
-    box-shadow:0 0 80px rgb(76, 165, 233),0 0 80px black;
-}
-.ra,.hvac,.se,.is,.mt,.tsr,.ebo,.psm,.i,.qci{
-    margin-left: 20px;
-    max-width: auto;
-}
-.ra li,.hvac li,.se li,.is li,.mt li,.tsr li,.ebo li,.psm li,.i li,.qci li{
-    margin-bottom: 20px;
-    font-size: large;
-}
-#img{
-    display:none;
-}
-#li{
-    display:none;
-}
-/* after */
-#img2{
-    display:block;
-    animation: slideInFromLeft 1s ease-in-out;
-}
-#li2{
-    display:block;
-    animation:slideInFromDown 1s ease-in-out;
-}
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 </style>
     </head>
     <body>
@@ -144,9 +87,9 @@
     <div class="career">
        <h2><b><u>CAREER OPPORTUNITIES & THEIR INFORMATION:</u></b></h2>
        <div class="content4" style="display: none;">
-                <div id="ra">
+                <div id="career-option">
                     <img id="img" src="https://www.shutterstock.com/image-photo/industrial-air-conditioning-technician-hvac-260nw-2325482053.jpg" width="400px" height="auto">
-                    <div class="ra">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Refrigeration and Air Conditioning Technician</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Install, maintain, and repair residential, commercial, and industrial refrigeration and air conditioning systems.</li>
@@ -154,9 +97,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="hvac">
+                <div id="career-option">
                     <img id="img" src="https://www.com.edu/_resources/images/smarter-education/COM_Program_Pages_HVAC.jpg" width="400px" height="auto">
-                    <div class="hvac">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>HVAC (Heating, Ventilation, and Air Conditioning) Technician</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Work specifically on HVAC systems, which include heating, ventilation, and air conditioning.</li>
@@ -164,9 +107,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="se">
+                <div id="career-option">
                     <img id="img" src="https://www.betterteam.com/images/betterteam-service-engineer-job-description-2400x2400-20210126.jpeg?crop=40:21,smart&width=1200&dpr=2&format=pjpg&auto=webp&quality=85" width="400px" height="auto">
-                    <div class="se">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Service Engineer</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b> Provide specialized maintenance and repair services for complex and large-scale refrigeration and air conditioning units.</li>
@@ -174,9 +117,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="is">
+                <div id="career-option">
                     <img id="img" src="https://drivers.jbhunt.com/blog/wp-content/uploads/2016/09/Appliance-Installation-Final-mile.jpg" width="400px" height="auto">
-                    <div class="is">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Installation Specialist</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b> Focus on the installation of new refrigeration and air conditioning systems in various settings.</li>
@@ -184,9 +127,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="mt">
+                <div id="career-option">
                     <img id="img" src="https://ftmaintenance.com/wp-content/uploads/2021/05/What-Makes-a-Good-Maintenance-Technician.jpg" width="400px" height="auto">
-                    <div class="mt">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Maintenance Technician</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Regularly service and maintain refrigeration and air conditioning systems to prevent breakdowns and prolong their lifespan.</li>
@@ -194,9 +137,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="tsr">
+                <div id="career-option">
                     <img id="img" src="https://www.springboard.com/blog/wp-content/uploads/2022/03/technical-sales-representative-job-description-2022-guide.png" width="400px" height="auto">
-                    <div class="tsr">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Technical Sales Representative</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Work in the sales and marketing of refrigeration and air conditioning equipment.</li>
@@ -204,9 +147,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="ebo">
+                <div id="career-option">
                     <img id="img" src="https://miro.medium.com/v2/resize:fit:1000/1*lbnEGzNwMgbGoBomaVn77w.jpeg" width="400px" height="auto">
-                    <div class="ebo">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Entrepreneur/Business Owner</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Start and manage your own business in the field of refrigeration and air conditioning services.</li>
@@ -214,9 +157,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="psm">
+                <div id="career-option">
                     <img id="img" src="https://c8.alamy.com/comp/R7K29X/project-supervisor-text-stamped-on-a-business-card-with-rubber-stamp-construction-manager-concept-3d-illustration-R7K29X.jpg" width="400px" height="auto">
-                    <div class="psm">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Project Supervisor/Manager</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Oversee projects involving the installation or upgrading of large-scale refrigeration and air conditioning systems.</li>
@@ -224,9 +167,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="i">
+                <div id="career-option">
                     <img id="img" src="https://mintbook.com/blog/wp-content/uploads/What-is-Instructor-Led-Training.png.webp" width="400px" height="auto">
-                    <div class="i">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Instructor/Trainer</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Teach and train new students in the field of refrigeration and air conditioning.</li>
@@ -234,9 +177,9 @@
                 </ul>
                     </div>
                 </div>
-                <div id="qci">
+                <div id="career-option">
                     <img id="img" src="https://unichrone.com/blog/wp-content/uploads/Quality-Control-Inspector-Roles-and-Responsibilities-.jpg" width="400px" height="auto">
-                    <div class="qci">
+                    <div class="career-option">
                     <h1 id="h1"><b><u>Quality Control Inspector</u></b></h1>
                 <ul id="li">
                     <li><b>Role:</b>Ensure that refrigeration and air conditioning systems meet quality and safety standards.</li>
