@@ -20,8 +20,11 @@ header button {
     display: flex;
     align-items: center;
     border-radius:15px;
-    margin-right:10%;
     animation:slideUP 1.5s ease;
+}
+header button:hover{
+    background-color:rgb(80, 169, 241);
+    color:white;
 }
 header button i {
     margin-right: 5px;
