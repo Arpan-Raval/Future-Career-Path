@@ -120,6 +120,24 @@ header h1{
         align-items: center;
     }
 }
+@media (max-width: 320px){
+    #career-option{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px){
+    #career-option{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    #career-option{
+        flex-direction:column;
+        align-items: center;
+    }
+}
 #career-option:hover{
     box-shadow:0 0 80px rgb(76, 165, 233),0 0 80px black;
 }
