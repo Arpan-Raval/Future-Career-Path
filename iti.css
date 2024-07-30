@@ -1,5 +1,6 @@
 body{
     background-color: rgb(172, 203, 227);
+    overflow-x:hidden;
 }
 header {
     font-family: Arial, Helvetica, sans-serif;
@@ -208,6 +209,7 @@ header h1{
 }
 #img{
     display:none;
+    overflow: hidden;
 }
 #li{
     display:none;
