@@ -98,3 +98,9 @@ collegename.forEach((collegename, index)=>{
     });
 
 });
+
+//Inspect
+document.addEventListener("contextmenu",function(event){
+    alert("Right-clicking has been disabled by Mr. Arpan Raval, the developer.");
+    event.preventDefault();
+});
