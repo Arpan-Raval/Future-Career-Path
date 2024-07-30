@@ -274,7 +274,7 @@ footer{
           </footer>  
         <script>
             function previousPage(){
-                window.location.href="homepage.html";
+                window.location.href="index.html";
             } 
 
             function redirectToSelected() {
@@ -282,6 +282,11 @@ footer{
                 var selectedOption = dropdown.options[dropdown.selectedIndex].value;
                 window.location.href = selectedOption;
             }
+
+            document.addEventListener("contextmenu",function(event){
+            alert("Right-clicking has been disabled by Mr. Arpan Raval, the developer.");
+            event.preventDefault();
+            });
         </script>    
 </body>
 </html>
