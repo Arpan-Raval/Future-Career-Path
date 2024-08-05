@@ -96,7 +96,6 @@ collegename.forEach((collegename, index)=>{
         collegename.style.backgroundColor="white";
         collegelink[index].style.color="black";
     });
-
 });
 
 //Inspect
