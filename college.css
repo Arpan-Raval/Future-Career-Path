@@ -1,0 +1,25 @@
+.college h2{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 5px rgb(76, 165, 233);
+    color: black;
+    top:10px;
+    background-color:white;
+    padding:20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: popup 4s ease-in-out;
+}
+.college h2:hover{
+    box-shadow:0 0 50px rgb(76, 165, 233),0 0 60px black;
+}
+.college-name{
+    border: 2px solid #000;
+    color: black;
+    background-color:white;
+    text-align:center;
+    padding:20px;
+    transition:all 0.3s ;
+}
