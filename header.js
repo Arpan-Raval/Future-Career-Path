@@ -40,7 +40,3 @@ header button i {
 header h1{
     animation:slideUP 1.5s ease;
 }`;
-
-const styleSheet = document.createElement("style");
-styleSheet.innerHTML = headerCSS;
-document.head.append(styleSheet);
