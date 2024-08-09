@@ -1,0 +1,21 @@
+.back {
+    position: absolute;
+    left: 20px;
+}
+.back button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    animation: slideUP 1.5s ease;
+}
+.back button:hover {
+    background-color: rgb(80, 169, 241);
+    color: white;
+}
+.back i {
+    margin-right: 5px;
+}
